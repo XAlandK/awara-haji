@@ -192,15 +192,6 @@ img { display: block; }
 .more span::before { top: -5px; }
 .more span::after  { top: 5px; }
 
-/* ===== Section header ===== */
-.section-title {
-  margin: 32px 0 16px;
-  font-size: 16px;
-  font-weight: 700;
-  text-align: center;
-  text-shadow: 0 0 12px rgba(255, 255, 255, 0.95), 0 0 2px rgba(255, 255, 255, 0.9);
-}
-
 /* ===== Footer ===== */
 .footer {
   margin-top: auto;
