@@ -34,7 +34,7 @@ git init
 git add .
 git commit -m "Awara Haji link page"
 git branch -M main
-git remote add origin https://github.com/<USERNAME>/awara-haji.git
+git remote add origin https://github.com/XAlandK/awara-haji.git
 git push -u origin main
 ```
 
@@ -49,10 +49,13 @@ git push -u origin main
 دوای چەند چرکەیەک لینکێکی وەک `https://awara-haji.vercel.app` وەردەگریت.
 هەر جارێک `git push` بکەیت، Vercel خۆکارانە نوێی دەکاتەوە.
 
-## 3. دوای وەرگرتنی لینکی Vercel
+## 3. لینک و QR کۆد
 
-- لە `index.html` ئەم دێڕە بگۆڕە بۆ لینکی تەواو، بۆ ئەوەی وێنەکە لە واتسئەپ/تێلێگرام دەربکەوێت:
-  ```html
-  <meta property="og:image" content="https://awara-haji.vercel.app/assets/avatar.jpg">
-  ```
-- **QR کۆد:** QR-ی ستاتیک (static) ڕاستەوخۆ لینکەکە لەخۆ دەگرێت، بۆیە هەتاهەتاییە و بەسەرناچێت — بە مەرجێک لینکی Vercel-ەکە نەگۆڕێت. لە خزمەتگوزارییە «dynamic»-ەکان دووربکەوەرەوە، چونکە زۆربەیان دوای ماوەیەک دەوەستن یان پارە داوا دەکەن.
+- لینکی ماڵپەڕ: **https://awara-haji.vercel.app**
+- QR کۆد لە فۆڵدەری `qr/`:
+  - `qr/awara-haji-qr.svg` ← بۆ چاپکردن (هەر قەبارەیەک بێت ڕوون دەمێنێتەوە)
+  - `qr/awara-haji-qr.png` ← 1968×1968 پیکسڵ، بۆ سۆشیاڵ میدیا و دیزاین
+
+QR-ەکە ستاتیکە: لینکەکە ڕاستەوخۆ لە ناو وێنەکەدایە و پشت بە هیچ خزمەتگوزارییەک نابەستێت، بۆیە هەرگیز بەسەرناچێت — تا ئەو کاتەی پڕۆژەکە لە Vercel بە ناوی `awara-haji` بمێنێتەوە. ئاستی چاککردنەوەی هەڵەی **H**ـە (٣٠٪)، واتە ئەگەر کەمێکیشی بشێوێت یان پیس بێت هەر دەخوێندرێتەوە.
+
+⚠️ ناوی پڕۆژەکە لە Vercel مەگۆڕە و مەیسڕەوە، ئەگینا لینکەکە دەگۆڕێت و QR-ە چاپکراوەکان کار ناکەن.
