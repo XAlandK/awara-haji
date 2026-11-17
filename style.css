@@ -32,7 +32,7 @@ body {
 /* Fixed flower background (works on iOS, unlike background-attachment: fixed) */
 .bg {
   position: fixed;
-  inset: 0;
+  inset: -12vh 0 0;            /* starts above the screen so the flower sits higher */
   z-index: -1;
   background: #c9d3dc url("assets/background.jpg") center / cover no-repeat;
 }
@@ -234,7 +234,7 @@ img { display: block; }
     min-height: calc(100vh - 64px);
     min-height: calc(100dvh - 64px);
     border-radius: var(--radius-page);
-    background: #c9d3dc url("assets/background.jpg") center top / cover no-repeat;
+    background: #c9d3dc url("assets/background.jpg") center 25% / cover no-repeat;
     box-shadow: 0 20px 60px rgba(20, 30, 45, 0.25);
     overflow: hidden;
   }
